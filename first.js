@@ -1,5 +1,3 @@
-console.log("js code is running");
-
 const apiKey = "179b21bd46d06f60e4e11c123052aa1f";
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
