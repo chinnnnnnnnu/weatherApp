@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalistic Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+}
+
+.weather-app {
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-image: url('your-background-image.jpg');
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.weather-info {
+  padding: 10px 0;
+}
+
+.temperature {
+  font-size: 48px;
+  color: #333;
+}
+
+#weather-icon {
+  font-size: 40px;
+  margin-left: 10px;
+  color: #ffcc00;
+}
+
+.recommendation {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.air-quality {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.aqi-tip {
+  color: green;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.forecast-day {
+  font-size: 14px;
+  color: #555;
+}
+
+.voice-command {
+  font-size: 24px;
+  color: #666;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+    </style>
+  <div class="weather-app">
+    <div class="background"></div>
+    <div class="weather-info">
+      <div class="temperature">
+        <span id="temp-value">25°</span>
+        <span id="weather-icon">&#x2600;</span> <!-- Sun icon example -->
+      </div>
+      <div class="recommendation">It’s a great day to go outside!</div>
+      <div class="air-quality">
+        <span>AQI: 42</span>
+        <span class="aqi-tip">Good</span>
+      </div>
+    </div>
+    <div class="forecast">
+      <div class="forecast-day">Mon - 22°</div>
+      <div class="forecast-day">Tue - 24°</div>
+      <div class="forecast-day">Wed - 26°</div>
+      <div class="forecast-day">Thu - 23°</div>
+      <div class="forecast-day">Fri - 27°</div>
+    </div>
+    <div class="voice-command">&#x1F50A;</div> <!-- Voice icon example -->
+  </div>
+</body>
+</html>
