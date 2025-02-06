@@ -1,8 +1,9 @@
- /*{
+body{
     margin : 0;
     padding : 0;
     font-family: 'poppins',sans-serif;
     box-sizing: border-box;
+
 }
 
 body{
@@ -108,109 +109,4 @@ body{
     margin-top: 10px;
     display:none;
 } 
-    */
 
-  body {
-        background-color: #222;
-        margin: 0;
-    }
-    
-    .card {
-        width: 80%; /* Reduced width by 20% */
-        max-width: 320px; /* Further reduced max-width */
-        background: linear-gradient(123deg, #00feba, #5b548a);
-        color: #fff;
-        margin: 60px auto 0;
-        border-radius: 12px; /* Smaller border radius */
-        padding: 25px 20px; /* Reduced padding */
-        text-align: center;
-        height: auto; /* Let the content adjust to its size */
-    }
-    
-    .search {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .search input {
-        border: 0;
-        outline: 0;
-        background: #ebfffc;
-        color: #555;
-        padding: 7px 18px; /* Reduced padding */
-        height: 35px; /* Smaller input height */
-        border-radius: 20px; /* Smaller border radius */
-        flex: 1;
-        margin-right: 8px; /* Reduced space between input and button */
-        font-size: 14px; /* Smaller font size */
-    }
-    
-    .search button {
-        border: 0;
-        outline: 0;
-        background-color: #ebfffc;
-        border-radius: 50%;
-        width: 40px; /* Smaller button */
-        height: 40px;
-        cursor: pointer;
-    }
-    
-    .search button img {
-        width: 12px; /* Smaller image */
-    }
-    
-    .weather-icon {
-        width: 110px; /* Smaller icon */
-        margin-top: 10px; /* Less space between icon and text */
-    }
-    
-    .weather h1 {
-        font-size: 50px; /* Smaller font size */
-        font-weight: 500;
-    }
-    
-    .weather h2 {
-        font-size: 28px; /* Smaller font size */
-        font-weight: 400;
-        margin-top: -8px;
-    }
-    
-    .details {
-        display: flex;
-        justify-content: space-between; /* More compact spacing */
-        padding: 0 8px; /* Reduced padding */
-        margin-top: 15px; /* Reduced margin */
-    }
-    
-    .col {
-        display: flex;
-        align-items: center;
-        text-align: left;
-    }
-    
-    .col img {
-        width: 25px; /* Smaller images */
-        margin-right: 6px;
-    }
-    
-    .humidity,
-    .wind {
-        font-size: 16px; /* Smaller font size */
-        margin-top: -4px;
-    }
-    
-    .weather {
-        display: none; /* Ensure the weather data is disappear*/
-    }
-    
-    .error {
-        text-align: left;
-        margin-left: 8px; /* Smaller margin */
-        font-size: 10px; /* Smaller font size */
-        margin-top: 8px;
-        display: none;
-    }
-    
-    
